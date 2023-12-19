@@ -9,3 +9,6 @@ build/**
 
 # Windows
 .DS_Store
+
+# Thirdparty
+thirdparty/install/**
