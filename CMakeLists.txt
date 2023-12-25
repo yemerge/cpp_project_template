@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.11)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 project(
-    CPP_PROJECT_TEMPLATE
-    LANGUAGES CXX
-    VERSION 1.0.0
-    DESCRIPTION "C++ Project Template"
-    HOMEPAGE_URL "https://github.com/yemerge/cpp_project_template"
+  CPP_PROJECT_TEMPLATE
+  LANGUAGES CXX
+  VERSION 1.0.0
+  DESCRIPTION "C++ Project Template"
+  HOMEPAGE_URL "https://github.com/yemerge/cpp_project_template"
 )
 
 message(STATUS)
@@ -93,6 +93,7 @@ add_subdirectory(${${PROJECT_NAME}_MODULE_PATH})
 add_subdirectory(${${PROJECT_NAME}_APPLICATION_PATH})
 
 set(${PROJECT_NAME}_SOURCE_FILES
+
   # src/main.cpp
   # ! Add source files here
 )
@@ -124,7 +125,6 @@ set(${PROJECT_NAME}_SOURCE_FILES
 # target_compile_options(${PROJECT_NAME} PRIVATE
 # ${CPP_COMFILE_FLAGS}
 # )
-
 message(STATUS)
 message(STATUS "Finished all process in ${PROJECT_NAME} CMakeLists.txt.")
 message(STATUS)
